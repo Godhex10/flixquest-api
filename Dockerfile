@@ -27,7 +27,7 @@ ENV PORT=${PORT}
 ENV NPM_CONFIG_LOGLEVEL=warn
 
 # copy project definition/dependencies files, for better reuse of layers
-COPY --chown=nodejs:nodejs package*.json ./
+COPY --chown=nodejs:nodejs package.json ./
 
 # install dependencies here, for better reuse of layers
 RUN npm install && npm update && npm cache clean --force
