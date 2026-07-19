@@ -1,4 +1,6 @@
-FROM node:18 as builder
+FROM node:18 AS builder
+# FlixQuest API
+
 
 LABEL version="1.0.0"
 LABEL description="FlixQuest API (fastify) Docker Image"
