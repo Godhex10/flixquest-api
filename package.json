@@ -7,7 +7,7 @@
         "node": ">=18"
     },
     "scripts": {
-        "start": "node --experimental-fetch src/index.ts",
+        "start": "ts-node src/index.ts",
         "dev": "nodemon src/index.ts",
         "lint": "prettier --write .",
         "test": "echo \"Error: no test specified\" && exit 1"
